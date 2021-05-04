@@ -1,0 +1,471 @@
+.content {
+    width: 700px;
+    margin: 0 auto;
+}
+
+ul{
+    margin-bottom: 0;
+}
+
+/* 選單 */
+header {
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0);
+    height: 0;
+}
+
+.bugur-menu{
+    display: block;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: none;
+}
+
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 3em;
+    text-align: center;
+    display: block;
+    color: #B70B63;
+}
+
+.menu {
+    display: none;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+    height: 80px;
+}
+
+.burgur-social{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    display: none;
+}
+
+.burgur-socialicon {
+    width: 1.5em;
+    fill: #B70B63;
+    height: 50px;
+    padding-left: 0;
+}
+
+/* 首頁 */
+.homepage {
+    width: 100%;
+    height: 1024px;
+    background-size: cover;
+    background-image: url(./img/TOP.jpg);
+    background-repeat: no-repeat;
+    background-position: -600px;
+}
+
+.scroll-box{
+    width: 100%;
+    height: 32px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.scroll {
+    width: 60px;
+    margin: 0 auto;
+}
+
+/* 內容-關於我們 */
+.about-bg {
+    width: 100%;
+    height: 1024px;
+    background-size: cover;
+    background-image: url(./img/about_bg_pad.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    padding-top: 100px;
+    height: 1024px;
+}
+
+.title {
+    display: flex;
+    width: 176px;
+    margin: 0 auto;
+}
+
+.titleitem {
+    height: 36px;
+    width: 8px;
+    background-color: #B70B63;
+}
+
+.titleitem h1{
+    display: block;
+}
+
+.aboutus {
+    width: 700px;
+    height: 550px;
+    padding-top: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.aboutus-slide {
+    display: none;
+}
+
+.about-card {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.about-content{
+    width: 225px;
+}
+.about-card h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.pic {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.pic img {
+    width: 100%;
+}
+
+/* 內容-櫻花圖鑑 */
+.library-bg {
+    width: 100%;
+    background-size: cover;
+    background-image: url(./img/library_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.library {
+    padding-top: 100px;
+    height: 1024px;
+}
+
+.sakura-content {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.sakura-cardgroup {
+    width: 700px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sakura {
+    width: 120px;
+    padding-bottom: 10px;
+}
+
+.sakura img {
+    width: 80px;
+    height: 80px;
+}
+
+.sakura-intro {
+    width: 300px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.sakura-card {
+    display: flex;
+    width: 3000px;
+    left: 0;
+    transition: .5s;
+    position: absolute;
+}
+
+.sakura-slide {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 9;
+}
+
+.ss-right {
+    top: 120px;
+    right: 0;
+}
+
+.ss-left {
+    top: 120px;
+    left: 0;
+    transform: scaleX(-1);
+}
+
+.flower-intro {
+    background-image: url(./img/sakura_card.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    padding-top: 70px;
+    /* background-color: #fff; */
+}
+
+.flower-intro img {
+    width: 150px;
+}
+
+.flower-intro h3 {
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.flower-intro p {
+    width: 300px;
+    padding-top: 50px;
+    font-size: 17px;
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+
+/* 內容-賞櫻去處 */
+.place-bg {
+    width: 100%;
+    background-size: cover;
+    background-image: url(./img/place_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.place {
+    padding-top: 100px;
+    height: 1024px;
+}
+
+.place-tw {
+    width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.place-card {
+    width: 3500px;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.card {
+    width: 700px;
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+    left: 0;
+    transition: .5s;
+}
+
+.data-box {
+
+    margin: auto 10px;
+}
+
+.data{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.data-img {
+    width: 325px;
+    height: 210px;
+    border-radius: 5px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.data-img img {
+    width: 100%;
+}
+
+iframe {
+    width: 325px;
+    height: 210px;
+    border-radius: 5px;
+}
+
+.text-box span {
+    line-height: 1.8em;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.text-box p{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: .3em;
+}
+
+.choose-it{
+    width: 700px;
+    height: 70px;
+    position: relative;
+}
+
+.choose-slide {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 9;
+}
+
+.cs-right {
+    top: 10px;
+    right: 0;
+}
+
+.cs-left {
+    top: 10px;
+    left: 0;
+    transform: scaleX(-1);
+}
+
+.choose {
+    display: none;
+}
+
+.chooseplace {
+    display: none;
+}
+
+.chooseplace span {
+    display: none;
+}
+
+/* 內容-聯絡我們 */
+.contact-bg {
+    width: 100%;
+    background-size: cover;
+    background-image: url(./img/contact_bg_phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact {
+    padding-top: 100px;
+    height: 944px;
+}
+
+.form-box {
+    width: 600px;
+    height: 570px;
+    background-color: #FADCE9;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form {
+    margin: auto 0;
+    position: relative;
+}
+
+.form-content{
+    position: relative;
+}
+
+.control span {
+    display: block;
+    margin: auto 0;
+}
+
+.content-text {
+    margin-top: 0;
+}
+
+.form-control {
+    width: 350px;
+    height: 30px;
+    margin: 6px;
+    border: none;
+    border-radius: 2px;
+}
+
+textarea {
+    border: none;
+    border-radius: 2px;
+    margin: 6px;
+    width: 500px;
+    height: 200px;
+}
+
+.send {
+    display: block;
+    text-align: center;
+    padding-top: 7px;
+    background-color: #B70B63;
+    color: #FFF;
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    margin-top: 15px;
+}
+
+.send:hover {
+    background-color: #D25089;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: #B70B63;
+    color: #FFF;
+    text-align: center;
+    padding-top: 30px;
+}

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>櫻花手帳</title>
+    <link rel="stylesheet" href="./link/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- RWD.css -->
+    <link href="./pc.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 1440px)"/>
+    <link href="pad.css" rel="stylesheet" type="text/css"
+        media="only screen and (min-width: 376px) and (max-width: 1439px)" />
+    <link href="phone.css" rel="stylesheet" type="text/css"
+        media="only screen and (min-width: 0px) and (max-width: 375px)" />
+
+    <style>
+        /* * {
+            outline: 1px solid #000;
+        } */
+
+        body {
+            color: #B70B63;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 36px;
+            font-weight: 700;
+            display: block;
+            line-height: .9em;
+            margin-bottom: 0;
+            padding: 0 8px;
+        }
+
+        h2 {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 2em;
+            color: #B70B63;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1em;
+            color: #B70B63;
+            text-align: center;
+            padding-top: 7px;
+            letter-spacing: .3em;
+            text-indent: .3em;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        p{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo col-3">
+                <a href="index.html"><img src="./icon/LOGO-2.svg" alt="">
+                </a>
+            </div>
+            <div class="burgar_btn">
+                <a href="#">
+                    <img src="./icon/menu.svg" alt="">
+                </a>
+            </div>
+            <div class="menulist col-8">
+                <ul>
+                    <li class="menu01"><a href="index.html#about-bg">關於我們</a></li>
+                    <li class="menu02"><a href="index.html#library-bg">櫻花圖鑑</a></li>
+                    <li class="menu03"><a href="index.html#place-bg">賞櫻去處</a></li>
+                    <li class="menu04"><a href="index.html#contact-bg">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="social col-1">
+                <a href="">
+                    <svg class="icon socialicon">
+                        <use xlink:href="./icon/Social/symbol-defs.svg#icon-facebook2"></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="icon socialicon">
+                        <use xlink:href="./icon/Social/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="icon socialicon">
+                        <use xlink:href="./icon/Social/symbol-defs.svg#icon-share2"></use>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+
+        <div class="bugur-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./icon/LOGO-2.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="navbar-toggler-icon" src="./icon/menu.svg" alt="">
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#about-bg">關於我們 </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#library-bg">櫻花圖鑑</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#place-bg">賞櫻去處</a>
+                    </li>                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#contact-bg">聯絡我們</a>
+                    </li>
+                  </ul>
+                  <div class="burgur-social">
+                    <svg class="icon burgur-socialicon">
+                        <use xlink:href="./icon/Social/symbol-defs.svg#icon-facebook2"></use>
+                    </svg>
+                    <svg class="icon burgur-socialicon">
+                        <use xlink:href="./icon/Social/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                    <svg class="icon burgur-socialicon">
+                        <use xlink:href="./icon/Social/symbol-defs.svg#icon-share2"></use>
+                    </svg>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- <ul>
+                <li class="menu01"><a href="index.html#about-bg">關於我們</a></li>
+                <li class="menu02"><a href="index.html#library-bg">櫻花圖鑑</a></li>
+                <li class="menu03"><a href="index.html#place-bg">賞櫻去處</a></li>
+                <li class="menu04"><a href="index.html#contact-bg">聯絡我們</a></li>
+            </ul> -->
+
+            
+        </div>
+    </header>
+    <div class="homepage">
+        <div class="scroll-box">
+            <div class="scroll">
+                <a href="#">
+                    <img src="./icon/scroll.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="about-bg" id="about-bg">
+        <div class="content">
+            <div class="about">
+                <div class="title">
+                    <div class="titleitem"></div>
+                    <h1>關於我們</h1>
+                    <div class="titleitem"></div>
+                </div>
+                <div class="aboutus">
+                    <img class="aboutus-slide as-right" src="./icon/slide.svg" alt="">
+                    <img class="aboutus-slide as-left" src="./icon/slide.svg" alt="">
+                    <ul class="about-card">
+                        <li>
+                            <div class="about-content">
+                                <div class="pic">
+                                    <img src="./img/sakura1.jpg" alt="">
+                                </div>
+                                <div class="about-text">
+                                    <h2>櫻花手帳</h2>
+                                    <p>隨著今年寒流頻頻來襲，各地櫻花已經等不及陸續綻放啦！想賞櫻的朋友不要錯過！本站整理出絕佳的賞櫻花景點，趕緊看看有哪些打卡必備的好去處吧！</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="about-content">
+                                <div class="pic">
+                                    <img src="./img/sakura2.jpg" alt="">
+                                </div>
+                                <div class="about-text">
+                                    <h2>櫻花季</h2>
+                                    <p>一抹粉嫩渲染全台，又到追櫻的季節。春天櫻景唯美浪漫，全台瘋狂一起賞櫻花，沒時間出國飛日本賞櫻花，完全沒關係，寶島台灣各縣也都有亮眼的賞櫻去處！</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="about-content">
+                                <div class="pic">
+                                    <img src="./img/sakura3.jpg" alt="">
+                                </div>
+                                <div class="about-text">
+                                    <h2>賞櫻</h2>
+                                    <p>台灣日治時期許多地區曾廣植櫻花，而在近年又因為受到日本觀光旅遊的影響，賞櫻風氣極盛，主要賞櫻地點大多會舉辦固定期間的櫻花季活動，且由於氣候影響，賞櫻地點大多位於山區，常會採取交通管制或人數管制等方式。近年由於賞櫻熱潮，也引發各地大量栽種櫻花的情形。</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="library-bg" id="library-bg">
+        <div class="content">
+            <div class="library">
+                <div class="title">
+                    <div class="titleitem"></div>
+                    <h1>櫻花圖鑑</h1>
+                    <div class="titleitem"></div>
+                </div>
+                <div class="sakura-content">
+                    <div class="sakura-box">
+                        <ul class="sakura-cardgroup">
+                            <li>
+                                <div class="sakura p1 text-center">
+                                    <img src="./icon/ba-chong.svg" alt="">
+                                    <h3>八重櫻</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sakura p2 text-center">
+                                    <img src="./icon/bai-chong.svg" alt="">
+                                    <h3>百重櫻</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sakura p3 text-center">
+                                    <img src="./icon/wu-she.svg" alt="">
+                                    <h3>霧社櫻</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sakura p4 text-center">
+                                    <img src="./icon/pink.svg" alt="">
+                                    <h3>紅粉佳人</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sakura p5 text-center">
+                                    <img src="./icon/zhao-he.svg" alt="">
+                                    <h3>昭和櫻</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sakura text-center">
+                                    <img src="./icon/da-dao.svg" alt="">
+                                    <h3>大島櫻</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sakura text-center">
+                                    <img src="./icon/qian-dao.svg" alt="">
+                                    <h3>千島櫻</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sakura text-center">
+                                    <img src="./icon/fu-shi.svg" alt="">
+                                    <h3>富士櫻</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sakura text-center">
+                                    <img src="./icon/ji-ye.svg" alt="">
+                                    <h3>吉野櫻</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sakura text-center">
+                                    <img src="./icon/shan.svg" alt="">
+                                    <h3>山櫻花</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sakura-intro">
+                        <img class="sakura-slide ss-right" src="./icon/slide.svg" alt="">
+                        <img class="sakura-slide ss-left" src="./icon/slide.svg" alt="">
+                        <ul class="sakura-card">
+                            <li>
+                                <div class="flower-intro text-center">
+                                    <img src="./icon/ba-chong.svg" alt="">
+                                    <h3>八重櫻</h3>
+                                    <p>
+                                        重瓣櫻花的總稱，非特定的品種名，<br>品種眾多。<br>
+                                        花瓣非常多又細，狀如菊花者，<br>也稱作菊櫻。<br>
+                                        花期：二月中旬～三月初
+                                    </p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="flower-intro text-center">
+                                    <img src="./icon/bai-chong.svg" alt="">
+                                    <h3>百重櫻</h3>
+                                    <p>
+                                        重瓣櫻花的總稱，非特定的品種名，<br>品種眾多。<br>
+                                        花瓣非常多又細，狀如菊花者，<br>也稱作菊櫻。<br>
+                                        花期：二月中旬～三月初
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flower-intro text-center">
+                                    <img src="./icon/wu-she.svg" alt="">
+                                    <h3>霧社櫻</h3>
+                                    <p>
+                                        台灣固有種。<br>在霧社首次發現，便以霧社山櫻命名。<br>
+                                        花瓣潔白，和花色粉紅的其他種類櫻花相比，<br>
+                                        更加顯其典雅語大方，在花瓣掉落時更猶如細雪紛飛。<br>
+                                        花期：三月～四月，持續2周
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flower-intro text-center">
+                                    <img src="./icon/pink.svg" alt="">
+                                    <h3>紅粉佳人</h3>
+                                    <p>
+                                        武陵農場獨有的櫻花品種，<br>
+                                        將日本昭和櫻與中國櫻桃雜交而產生的新品種，<br>
+                                        花瓣密集如繡球般迷人，<br>
+                                        因淡雅清香呈粉色故以「紅粉佳人」命之。<br>
+                                        花期：二月中旬～二月底
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flower-intro text-center">
+                                    <img src="./icon/zhao-he.svg" alt="">
+                                    <h3>昭和櫻</h3>
+                                    <p>
+                                        昭和櫻則為低海拔地區日本櫻花品種，<br>
+                                        花朵全開時5個花瓣分離較明顯、花瓣也較長。<br>
+                                        花期：一月下旬～二月
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flower-intro text-center">
+                                    <img src="./icon/da-dao.svg" alt="">
+                                    <h3>大島櫻</h3>
+                                    <p>
+                                        昭和櫻則為低海拔地區日本櫻花品種，<br>
+                                        花朵全開時5個花瓣分離較明顯、花瓣也較長。<br>
+                                        葉片還可作為食用，<br>
+                                        櫻葉麻糬使用的就是大島櫻花的葉片。<br>
+                                        花期：一月下旬～二月
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flower-intro text-center">
+                                    <img src="./icon/qian-dao.svg" alt="">
+                                    <h3>千島櫻</h3>
+                                    <p>
+                                        花瓣為淡淡粉紅色，<br>
+                                        與吉野櫻很像，但花比吉野櫻大、雄蕊比較長。<br>
+                                        千島櫻是日系櫻花花期最早的品種。<br>
+                                        花期：二月至三月
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flower-intro text-center">
+                                    <img src="./icon/fu-shi.svg" alt="">
+                                    <h3>富士櫻</h3>
+                                    <p>
+                                        由台灣山櫻花與日本山櫻花雜交而來，<br>
+                                        在台灣稱為富士櫻。<br>
+                                        但在日本，富士櫻指的是另外一種日本原生種櫻花。<br>
+                                        花朵為粉紅色或淡紅色。<br>
+                                        花期：二月中上旬<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flower-intro text-center">
+                                    <img src="./icon/ji-ye.svg" alt="">
+                                    <h3>吉野櫻</h3>
+                                    <p>
+                                        是日本千歲櫻與大島櫻的雜交種。<br>
+                                        花色較白，花瓣根部重疊，花心有一點深粉紅，<br>
+                                        盛開時全株花樹只有花朵沒有葉子。<br>
+                                        花期：三月中旬至四月初<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flower-intro text-center">
+                                    <img src="./icon/shan.svg" alt="">
+                                    <h3>山櫻花</h3>
+                                    <p>
+                                        為台灣原生種，又稱作緋寒櫻，<br>
+                                        能適應較暖和的氣候與低海拔地區。<br>
+                                        山櫻花溫需求量較少，為台灣冬末春初最早開的櫻花。<br>
+                                        花型呈吊鐘狀，花色為濃桃紅色。<br>
+                                        花期：一月下旬～二月
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="place-bg" id="place-bg">
+        <div class="content">
+            <div class="place">
+                <div class="title">
+                    <div class="titleitem"></div>
+                    <h1>賞櫻去處</h1>
+                    <div class="titleitem"></div>
+                </div>
+                <div class="place-tw">
+                    <ul class="place-card">
+                        <li>
+                            <div class="card">
+                                <div class="data-box">
+                                    <div class="data">
+                                        <div class="data-img">
+                                            <img src="./img/yangmin.jpg" alt="">
+                                        </div>
+                                        <div class="data-map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7220.606216825732!2d121.55960055805714!3d25.192998673873568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442adf824cfc74b%3A0x5c0be3a34fc3b079!2z6Zm95piO5bGx5ZyL5a625YWs5ZyS!5e0!3m2!1szh-TW!2stw!4v1615271528843!5m2!1szh-TW!2stw"
+                                                 style="border:0;" allowfullscreen=""
+                                                loading="lazy"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <h2>陽明山</h2>
+                                        <span>2021年櫻花季：</span>
+                                        <p>2/5～3/21</p>
+                                        <span>賞花地點：</span>
+                                        <p>
+                                            國安局綠地、花卉試驗中心、仰德大道沿線、陽明公園、前山一號公園、前山一號公園、陽明公園花鐘廣場、湖山綠地
+                                        </p>
+                                        <span>交通資訊：</span>
+                                        <p>
+                                            •捷運石牌站→ 公車小8、128<br>
+                                            •捷運北投站→ 公車小9 、129<br>
+                                            •台北車站→ 公車260區／花鐘<br>
+                                            ※128、129公車僅假日行駛。<br>
+                                            •台北車站／捷運士林站→搭公車260、260區／花鐘、1717，於「山仔后派出所站」下車，步行3分鐘。<br>
+                                            •陽明山花鐘→ 搭公車260區/花鐘，於「山仔后派出所站」下車，步行3分鐘。<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <div class="data-box">
+                                    <div class="data">
+                                        <div class="data-img">
+                                            <img src="./img/tienyuen2.jpg" alt="">
+                                        </div>
+                                        <div class="data-map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.496379217307!2d121.48264611538076!3d25.18647763831523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442b031681a7cef%3A0xd55270d1b40122fe!2z5reh5rC054Sh5qW15aSp5YWD5a6u!5e0!3m2!1szh-TW!2stw!4v1615272346475!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen=""
+                                                loading="lazy"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <h2>淡水天元宮</h2>
+                                        <span>2021年櫻花季：</span>
+                                        <p>
+                                            1月底～2月初，吉野櫻為3月中下旬
+                                        </p>
+                                        <span>地址：</span>
+                                        <p>
+                                            新北市淡水區北新路三段36號
+                                        </p>
+                                        <span>交通資訊：</span><br>
+                                        <span>【大眾運輸】</span>
+                                        <p>
+                                            •淡水捷運站→ 搭乘淡水客運往北新莊方向之班車→ 天元宮站下車即可抵達。<br>
+                                            •輕軌淡金北新站下車→ 延北新路往淡水天元宮方向騎乘Ubike約25分鐘可抵達<br>
+                                        </p>
+                                        <span>【自行開車】</span><br>
+                                        <p>
+                                            •由台北市區行駛承德路→ 大度路至紅樹林捷運站接右側台2線，至北新路右轉→ 續行5分鐘即可到達天元宮<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <div class="data-box">
+                                    <div class="data">
+                                        <div class="data-img">
+                                            <img src="./img/wulin.jpg" alt="">
+                                        </div>
+                                        <div class="data-map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.0425600795065!2d121.30601671537006!3d24.34501007171668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468f19f313e68c3%3A0x6819a9bbcfd33989!2z5q2m6Zm16L6y5aC0!5e0!3m2!1szh-TW!2stw!4v1615272389178!5m2!1szh-TW!2stw"
+                                                style="border:0;" allowfullscreen=""
+                                                loading="lazy"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <h2>武陵農場</h2>
+                                        <span>2021年櫻花季：</span>
+                                        <p>
+                                            2/12～2/28</p>
+                                        <span>地址：</span>
+                                        <p>
+                                            武陵路和平區台中市424號
+                                        </p>
+                                        <span>交通資訊：</span><br>
+                                        <span>【大眾運輸】</span>
+                                        <p>
+                                            •國光客運：1751／1764<br>
+                                            •豐原客運：865
+                                        </p>
+                                        <span>【自行開車】</span>
+                                        <p>
+                                            •台北：國道五號(雪山隧道) →宜蘭→員山(台七線)→棲蘭(台七甲線)→南山→武陵農場<br>
+                                            •桃園：三民→ 巴陵→ 明池→ 棲蘭→ 南山→ 武陵<br>
+                                            •高雄：南二高→ 中興新村→ 草屯→ 埔里→ 霧社→ 合歡山→ 梨山→ 武陵<br>
+                                            •台中：國道六號（或中投快速道路）→ 埔里→ 霧社→ 合歡山→ 梨山→ 武陵<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <div class="data-box">
+                                    <div class="data">
+                                        <div class="data-img">
+                                            <img src="./img/awanda.jpg" alt="">
+                                        </div>
+                                        <div class="data-map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14585.706344085473!2d121.17402623650196!3d23.94535096284592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468c6bd4dcb5247%3A0x5b45ebc819afd925!2zNTQ25Y2X5oqV57ij5LuB5oSb6YSJ5aWn6JCs5aSn!5e0!3m2!1szh-TW!2stw!4v1615272419724!5m2!1szh-TW!2stw"
+                                                style="border:0;" allowfullscreen=""
+                                                loading="lazy"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <h2>奧萬大國家森林遊樂區</h2>
+                                        <span>2021年櫻花季時間：</span>
+                                        <p>
+                                            1月～3月
+                                        </p>
+                                        <span>地址：</span>
+                                        <p>
+                                            南投縣仁愛鄉親愛村大安路153號</p>
+                                        <span>營業時間：</span>
+                                        <p>
+                                            8:00-17:00
+                                        </p>
+                                        <span>交通資訊：</span>
+                                        <p>
+                                            •國道三號→ 霧峰系統交流道(214K)→ 國道六號埔里端→ 左轉台14→ 霧社→ 右轉投83線→ 奧萬大<br>
+                                            •國道一號→ 北部南下國道一號→ 彰化系統交流道(193K)→ 國道三號→ 霧峰系統交流道(214K)→ 國道六號埔里端→
+                                            左轉台14→ 霧社→
+                                            右轉投83線→ 奧萬大<br>
+                                            •國道一號→ 南部北上國道一號→ 經東西向快速道路(例如台78、82、84)→ 國道三號→ 霧峰系統交流道(214K)→
+                                            國道六號埔里端→ 左轉台14→ 霧社→ 右轉投83線→ 奧萬大
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <div class="data-box">
+                                    <div class="data">
+                                        <div class="data-img">
+                                            <img src="./img/alishan.jpg" alt="">
+                                        </div>
+                                        <div class="data-map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14642.568362367823!2d120.79154003095864!3d23.43729276482307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ee75449af122b%3A0x91d9e9efcca8b4ec!2zNjA15ZiJ576p57ij6Zi_6YeM5bGx6YSJ!5e0!3m2!1szh-TW!2stw!4v1615272573292!5m2!1szh-TW!2stw"
+                                                 style="border:0;" allowfullscreen=""
+                                                loading="lazy"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <h2>阿里山</h2>
+                                        <span>2021年櫻花季時間：</span>
+                                        <p>
+                                            03/10～04/10
+                                        </p>
+                                        <span>交通管制時間：</span>
+                                        <p>
+                                            3月13～14、20～21、27～28／4月2～5、10，共計11天。<br>
+                                            管制時段為小型車上午6時至11時止。
+                                        </p>
+                                        <span>交通資訊：</span><br>
+                                        <span>【大眾運輸】</span>
+                                        <p>
+                                            •嘉義站2號出口→ 快捷公車BRT→ 嘉義火車站→轉乘公車「台灣好行-阿里山B線」<br>
+                                            •嘉義站2號出口7號月台→ 轉乘公車「台灣好行-阿里山A線」
+                                        </p>
+                                        <span>【自行開車】</span>
+                                        <p>
+                                            •國道三號→ 台三線→ 梅山交流道(279k)→ 162甲線道<br>
+                                            •國道三號→ 台三線→ 竹崎交流道(290k)→ 166線道<br>
+                                            •國道一號→ 嘉義系統交流道(272k)→ 82號快速交流道→ 國道三號→ 中埔交流道(297k)→ 台18線
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="choose-it">
+                        <img class="choose-slide cs-right" src="./icon/slide.svg" alt="">
+                        <img class="choose-slide cs-left" src="./icon/slide.svg" alt="">
+                        <ul class="choose">
+                            <li>
+                                <div class="chooseplace text-center">
+                                    <img src="./icon/yangming.svg" alt="" class="placeicon" width="100px">
+                                    <br><span>陽明山</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="chooseplace text-center">
+                                    <img src="./icon/tienyun.svg" alt="" height="70px">
+                                    <br><span>淡水天元宮</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="chooseplace text-center">
+                                    <img src="./icon/wulinfarm.svg" alt="" width="100px">
+                                    <br><span>武陵農場</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="chooseplace text-center">
+                                    <img src="./icon/awanda.svg" alt="" width="100px">
+                                    <br><span>奧萬大國家森林遊樂區</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="chooseplace text-center">
+                                    <img src="./icon/alishan.svg" alt="" width="100px">
+                                    <br><span>阿里山</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-bg" id="contact-bg">
+        <div class="content">
+            <div class="contact">
+                <div class="title">
+                    <div class="titleitem"></div>
+                    <h1>聯絡我們</h1>
+                    <div class="titleitem"></div>
+                </div>
+                <div class="form-box">
+                    <div class="form">
+                        <div class="form-content">
+                            <div class="name control">
+                                <span class="tip">名字/Name</span>
+                                <input type="name" class="form-control">
+                            </div>
+                            <div class="email control">
+                                <span class="tip">E-mail</span>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="subject control">
+                                <span class="tip">主旨/Subject</span>
+                                <input type="subject" class="form-control">
+                            </div>
+                            <div class="content-box control">
+                                <span class="content-text">內容/Content</span>
+                                <textarea></textarea>
+                            </div>
+                            <div class="send">
+                                送出/Send
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2021 MMMH60 UIUX, 006. All rights reserved.</p>
+        </div>
+    </div>
+
+
+    <script src="./link/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="./jq.js"></script>
+</body>
+
+</html>
